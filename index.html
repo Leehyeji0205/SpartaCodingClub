@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+              /* 이서윤체 폰트 적용을 위한 코드 */
+      @font-face {
+        font-family: "LeeSeoyun";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body{
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+      }
+
+      .container{
+        width: 390px;
+        background-color: #ff9d73;
+        height: 100%;
+      }
+
+      .photos{
+        margin-top: 30px;
+
+      }
+
+      .photo-frame {
+        color: palevioletred;
+        background-color: grey;
+        margin: 15px 20px;
+        height: 200px;
+
+        background-size: contain;
+        position: relative;
+      }
+
+      .photo-description {
+        color: white;
+        background-color: black;
+
+        width: fit-content;
+        padding: 0 20;
+        margin-bottom: 10px;
+
+        border-radius: 10px;
+        position: relative;
+        /* position :absolute; */
+        bottom: 0;
+
+        transform: translate(-50%);
+        left: 50%;
+      }
+
+      .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .f-title {
+        color: white;
+        font-size: 25px;
+        font-weight: 900;
+      }
+
+      .f-date {
+        color: white;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      #image1 {
+        background-image: url('./1.jpg');
+
+      }
+      #image2 {
+        background-image: url('./2.jpg');
+
+      }
+      #image3 {
+        background-image: url('./3.jpg');
+
+      }
+      #image4 {
+        background-image: url('./4.jpg');
+
+      }
+
+    </style>
+    <body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame">민지</div>
+                <span id="desc1" class="photo-description">내 여자 교복입고 귀여울 때</span>
+            <div id="image2" class="photo-frame">혜인</div>
+                <span id="desc2" class="photo-description">내 여자 윙크할 때</span>
+            <div id="image3" class="photo-frame">혜인</div>
+                <span id="desc3" class="photo-description">내 여자 교복입고 시크할 때</span>
+            <div id="image4" class="photo-frame">해린</div>
+                <span id="desc4" class="photo-description">내 여자 인스타 사진 찍을 때</span>
+        </div>
+        <div class="footer">
+            <p class="f-title"> Happy Lunch Time</p>
+            <p class="f-date"> 2023.02.13</p>
+    </div>
+
+</body>
+</html>
